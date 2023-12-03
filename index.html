@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- daisyui-link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.17/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- inter-font-family-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- date-picker -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Lupe</title>
+  </head>
+  <body data-theme="light">
+    <div>
+      <header class="border-b">
+        <div class="container flex justify-between items-center mx-auto py-3">
+          <h1 class="text-3xl font-bold">Lupe</h1>
+          <div>
+            <img width="30" src="./assets/images/close.png" alt="close" />
+          </div>
+        </div>
+      </header>
+      <div class="container mx-auto flex justify-center">
+        <div class="w-10/12">
+          <nav>
+            <div class="navbar gap-5 px-6 border rounded-md my-10 bg-base-100">
+              <a
+                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                >Templates</a
+              >
+              <a
+                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal bg-blue text-green-200 text-blue border-none shadow-none text-md"
+                >Create Report</a
+              >
+              <a
+                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                >Manage Reports</a
+              >
+              <a
+                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                >Drill Down</a
+              >
+            </div>
+          </nav>
+          <!-- ================ form-controls =================== -->
+          <div>
+            <div>
+              <div class="flex justify-between">
+                <label class="form-control w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold">Company</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Finace Automation"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+                <label class="form-control w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold">Report Type</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Profit & Loss: General Ledger Aaccount"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+              </div>
+              <div class="flex justify-between">
+                <label class="form-control mt-5 w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold">Date Range</span>
+                  </div>
+                  <input
+                    type="text"
+                    name="datetimes"
+                    placeholder="Finace Automation"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+                <label class="form-control mt-5 w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold"
+                      >Display Columns By</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Month"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+              </div>
+              <!-- toggle-btn -->
+              <div class="flex gap-3">
+                <div class="flex items-center">
+                  <label class="switch mt-8 my-2">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                  <p class="mt-6 mx-2">Include Adjustments</p>
+                </div>
+                <div class="flex items-center">
+                  <label class="switch mt-8 my-2">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <p class="mt-6 mx-2">Embed URL Links</p>
+                </div>
+                <div class="flex items-center">
+                  <label class="switch mt-8 my-2">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <p class="mt-6 mx-2">Show Zeros</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================== filter-section ================ -->
+          <div class="mt-14 mb-6">
+            <div class="w-full flex justify-center">
+              <div class="w-8/12 flex justify-between border rounded-md">
+                <div class="text-center hover:text-[#0ABAB5]  hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-b border-[#0ABAB5] w-4/12">
+                  <p class="text-blue">Filter</p>
+                </div>
+                <div class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer  border-l py-4 w-4/12">
+                  <p>Formating</p>
+                </div>
+                <div class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-l w-4/12">
+                  <p>Styling</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================ form-controls =================== -->
+          <div>
+            <div>
+              <div class="flex justify-between">
+                <label class="form-control relative w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold"
+                      >Filter by partners</span
+                    >
+                  </div>
+                  <div class="absolute left-3 top-12">
+                    <img width="20" src="./assets/images/Search.png" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search partner..."
+                    class="input input-bordered pl-8 text-blue focus:outline-offset-0 w-full max-w-md"
+                  />
+                </label>
+                <label class="form-control relative w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold"
+                      >Filter by sections</span
+                    >
+                  </div>
+                  <div class="absolute left-3 top-12">
+                    <img width="20" src="./assets/images/Search.png" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search sections..."
+                    class="input input-bordered pl-8 text-blue focus:outline-none w-full max-w-md"
+                  />
+                </label>
+              </div>
+              <div class="flex justify-between">
+                <label class="form-control relative mt-5 w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold">Filter by tags</span>
+                  </div>
+                  <div class="absolute left-3 top-12">
+                    <img width="20" src="./assets/images/Search.png" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search tags.."
+                    class="input input-bordered pl-8 text-blue focus:outline-none w-full max-w-md"
+                  />
+                </label>
+                <label class="form-control relative mt-5 w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold"
+                      >Filter by items</span
+                    >
+                  </div>
+                  <div class="absolute left-3 top-12">
+                    <img width="20" src="./assets/images/Search.png" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="search items"
+                    class="input input-bordered pl-8 text-blue focus:outline-none w-full max-w-md"
+                  />
+                </label>
+              </div>
+              <label class="form-control relative mt-5 w-full max-w-md">
+                <div class="label">
+                  <span class="label-text font-semibold"
+                    >Filter by account items</span
+                  >
+                </div>
+                <div class="absolute left-3 top-12">
+                  <img width="20" src="./assets/images/Search.png" alt="" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search account items..."
+                  class="input input-bordered pl-8 text-blue focus:outline-none w-full max-w-md"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= footer ================== -->
+      <footer class="footer items-center border-t mt-16 p-4">
+        <div class="container flex justify-between items-center mx-auto">
+          <aside class="flex items-center gap-3">
+            <div>
+              <img width="30" src="./assets/images/Settings.png" alt="" />
+            </div>
+            <div class="dropdown relative dropdown-top">
+              <div tabindex="0" role="button" class="btn border pr-10 m-1">
+                English
+              </div>
+              <div class="absolute right-3 top-4">
+                <img width="25" src="./assets/images/arrow-up.png" alt="" />
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>French</a></li>
+                <li><a>German</a></li>
+              </ul>
+            </div>
+          </aside>
+          <p>Copyright © 2023 - All right reserved</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      $(function () {
+        $('input[name="datetimes"]').daterangepicker({
+          timePicker: true,
+          startDate: moment().startOf("hour"),
+          endDate: moment().startOf("hour").add(32, "hour"),
+          locale: {
+            format: "M/DD hh:mm A",
+          },
+        })
+      })
+    </script>
+  </body>
+</html>
