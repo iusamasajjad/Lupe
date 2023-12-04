@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- daisyui-link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.17/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- inter-font-family-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- date-picker -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Lupe</title>
+  </head>
+  <body data-theme="light">
+    <div>
+      <header class="border-b">
+        <div class="container flex justify-between items-center mx-auto py-3">
+          <h1 class="text-3xl font-bold">Lupe</h1>
+          <div>
+            <img width="30" src="./assets/images/close.png" alt="close" />
+          </div>
+        </div>
+      </header>
+      <div class="container mx-auto flex justify-center">
+        <div class="w-10/12">
+          <nav>
+            <div class="navbar gap-5 px-6 border rounded-md my-10 bg-base-100">
+              <a
+                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                >Templates</a
+              >
+              <a
+                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal bg-blue text-green-200 text-blue border-none shadow-none text-md"
+                >Create Report</a
+              >
+              <a
+                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                >Manage Reports</a
+              >
+              <a
+                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                >Drill Down</a
+              >
+            </div>
+          </nav>
+          <!-- ================ start-from-scratch ==================== -->
+
+          <div class="flex gap-4 my-4">
+            <div class="flex bg-blue py-2 px-2 items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  viewBox="0 0 23 22"
+                  fill="none"
+                >
+                  <path
+                    d="M8.60291 4.65198C8.60291 3.65029 9.41494 2.83826 10.4166 2.83826H12.2303C13.232 2.83826 14.0441 3.65029 14.0441 4.65198V6.4657H8.60291V4.65198Z"
+                    stroke="#0ABAB5"
+                    stroke-width="1.81372"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.60291 4.65198H6.78918C5.78749 4.65198 4.97546 5.46401 4.97546 6.4657V17.348C4.97546 18.3497 5.78749 19.1617 6.78918 19.1617H11.3235H15.8578C16.8595 19.1617 17.6715 18.3497 17.6715 17.348V6.4657C17.6715 5.46401 16.8595 4.65198 15.8578 4.65198H14.0441"
+                    stroke="#0ABAB5"
+                    stroke-width="1.81372"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p class="text-blue">Start from scratch</p>
+            </div>
+            <div class="flex py-2 px-2 items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 22"
+                  fill="none"
+                >
+                  <path
+                    d="M3.98999 8.48136V16.0363C3.98999 16.9635 4.74165 17.7152 5.66886 17.7152H12.3844M3.98999 8.48136V5.96305C3.98999 5.03584 4.74165 4.28418 5.66886 4.28418H15.7421C16.6693 4.28418 17.421 5.03584 17.421 5.96305V8.48136M3.98999 8.48136H12.3844M17.421 8.48136V16.0363C17.421 16.9635 16.6693 17.7152 15.7421 17.7152H12.3844M17.421 8.48136H12.3844M12.3844 8.48136V17.7152"
+                    stroke="black"
+                    stroke-opacity="0.5"
+                    stroke-width="1.67887"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Start from a template</p>
+            </div>
+            <div class="flex py-2 px-2 items-center gap-2">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M9.2052 5C9.2052 3.89543 10.1006 3 11.2052 3H13.2052C14.3098 3 15.2052 3.89543 15.2052 5V7H9.2052V5Z"
+                    stroke="black"
+                    stroke-opacity="0.5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.2052 5H7.2052C6.10063 5 5.2052 5.89543 5.2052 7V19C5.2052 20.1046 6.10063 21 7.2052 21H11.2052M15.2052 5H17.2052C18.3098 5 19.2052 5.89543 19.2052 7V12"
+                    stroke="black"
+                    stroke-opacity="0.5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.7052 15V21M16.7052 21L14.2052 18.5M16.7052 21L19.2052 18.5"
+                    stroke="black"
+                    stroke-opacity="0.5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <p>Import from spreadsheet</p>
+            </div>
+          </div>
+          <!-- ================ form-controls =================== -->
+          <div>
+            <div>
+              <div class="flex justify-between">
+                <label class="form-control w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold">Select Company</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Finace Automation"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+                <label class="form-control w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold mt-4"></span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Connect with another country"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+              </div>
+              <div class="flex justify-between">
+                <label class="form-control mt-5 w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold">Chose a report</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Profit & Loss"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+                <label class="form-control mt-5 w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold"
+                      >Accounting Method</span
+                    >
+                  </div>
+                  <div class="flex gap-3 pt-4">
+                    <div class="flex gap-2">
+                      <input
+                        type="radio"
+                        name="radio-4"
+                        class="radio radio-accent"
+                        checked
+                      />
+                      <p>Accrual</p>
+                    </div>
+                    <div class="flex gap-2">
+                      <input
+                        type="radio"
+                        name="radio-4"
+                        class="radio radio-accent"
+                      />
+                      <p>Cash</p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- ================ insert-rows-columns ============== -->
+
+              <div class="flex items-center gap-2 mt-4">
+                <div
+                  class="flex gap-2 items-center py-2 px-2 bg-gray-100 rounded"
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="13"
+                      viewBox="0 0 14 13"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.5 11H4.5C2.7 11 1.5 9.875 1.5 8.1875V4.8125C1.5 3.125 2.7 2 4.5 2H10.5C12.3 2 13.5 3.125 13.5 4.8125V8.1875C13.5 9.875 12.3 11 10.5 11Z"
+                        fill="#F43535"
+                      />
+                      <path
+                        d="M7.475 5.14579L8.82917 5.95829C9.31667 6.28329 9.31667 6.77079 8.82917 7.09579L7.475 7.90829C6.93333 8.23329 6.5 7.96246 6.5 7.36663V5.74163C6.5 5.03746 6.93333 4.82079 7.475 5.14579Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p class="text-gray-400">
+                    1:32 You can insert rows & columns directly indide your
+                    report
+                  </p>
+                </div>
+                <div
+                  class="flex justify-center items-center py-3 px-2 bg-gray-100 rounded"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_35_110)">
+                      <path
+                        d="M1.5 1.66699L8.16667 8.33366"
+                        stroke="#0ABAB5"
+                        stroke-width="1.66667"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.1665 1.66699L1.49984 8.33366"
+                        stroke="#0ABAB5"
+                        stroke-width="1.66667"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_35_110">
+                        <rect
+                          width="9"
+                          height="10"
+                          fill="white"
+                          transform="translate(0.166626)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <!-- date-range -->
+              <div class="flex justify-between">
+                <label class="form-control mt-5 w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold">Date Range</span>
+                  </div>
+                  <input
+                    type="text"
+                    name="datetimes"
+                    placeholder="Finace Automation"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+                <label class="form-control mt-5 w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold"
+                      >Display Columns By</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Month"
+                    class="input input-bordered text-blue focus:outline-offset-0 focus:outline-[#0ABAB5] w-full max-w-md"
+                  />
+                </label>
+              </div>
+              <!-- toggle-btn -->
+              <div class="flex gap-3">
+                <div class="flex items-center">
+                  <label class="switch mt-8 my-2">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                  <p class="mt-6 mx-2">Add budget & variance columns</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================== filter-section ================ -->
+          <div class="mt-14 mb-6">
+            <div class="w-full flex justify-center">
+              <div class="w-8/12 flex justify-between border rounded-md">
+                <div
+                  class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-b border-[#0ABAB5] w-4/12"
+                >
+                  <p class="text-blue">Advance Setting</p>
+                </div>
+                <div
+                  class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer border-l py-4 w-4/12"
+                >
+                  <p>Formating</p>
+                </div>
+                <div
+                  class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-l w-4/12"
+                >
+                  <p>Filter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================ form-controls =================== -->
+          <div>
+            <div class="pt-4">
+              <div class="flex justify-between items-start">
+                <!-- toggle-btn -->
+                <div class="">
+                    <span class="label-text font-semibold"
+                      >Select an option</span
+                    >
+                  <div class="flex justify-between gap-3">
+                    <div class="flex items-center">
+                      <label class="switch mt-8 my-2">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                      <p class="mt-6 mx-2">Enable drill down</p>
+                    </div>
+                    <div class="flex items-center">
+                      <label class="switch mt-8 my-2">
+                        <input type="checkbox" checked />
+                        <span class="slider round"></span>
+                      </label>
+                      <p class="mt-6 mx-2">Enable named ranges</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="flex items-center">
+                      <label class="switch mt-8 my-2">
+                        <input type="checkbox"  />
+                        <span class="slider round"></span>
+                      </label>
+                      <p class="mt-6 mx-2">Use formulas for subtotals</p>
+                    </div>
+                    <div class="flex items-center">
+                      <label class="switch mt-8 my-2">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                      </label>
+                      <p class="mt-6 mx-2">Database report?</p>
+                    </div>
+                  </div>
+                </div>
+                <label class="form-control relative w-full max-w-md">
+                  <div class="label">
+                    <span class="label-text font-semibold"
+                      >Choose account to include</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Active"
+                    class="input input-bordered pl-8 text-blue focus:outline-none w-full max-w-md"
+                  />
+                </label>
+              </div>
+              <div class="flex justify-end">
+                <div class="flex gap-3 items-end w-full max-w-md">
+                  <button class="btn px-6 text-white bg-blue-dark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M13.5 3.11719H12H8C6.34315 3.11719 5 4.46033 5 6.11719V18.1172C5 19.774 6.34315 21.1172 8 21.1172H11M13.5 3.11719L19 8.74219M13.5 3.11719V7.74219C13.5 8.29447 13.9477 8.74219 14.5 8.74219H19M19 8.74219V11.9297"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17 15.1172V18.1172M17 21.1172V18.1172M17 18.1172H14M17 18.1172H20"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Button
+                  </button>
+                  <div>
+                    <p>Sheet name</p>
+                    <p class="text-blue">Profit & Loss (1)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= footer ================== -->
+      <footer class="footer items-center border-t mt-16 p-4">
+        <div class="container flex justify-between items-center mx-auto">
+          <aside class="flex items-center gap-3">
+            <div>
+              <img width="30" src="./assets/images/Settings.png" alt="" />
+            </div>
+            <div class="dropdown relative dropdown-top">
+              <div tabindex="0" role="button" class="btn border pr-10 m-1">
+                English
+              </div>
+              <div class="absolute right-3 top-4">
+                <img width="25" src="./assets/images/arrow-up.png" alt="" />
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>French</a></li>
+                <li><a>German</a></li>
+              </ul>
+            </div>
+          </aside>
+          <p>Copyright © 2023 - All right reserved</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      $(function () {
+        $('input[name="datetimes"]').daterangepicker({
+          timePicker: true,
+          startDate: moment().startOf("hour"),
+          endDate: moment().startOf("hour").add(32, "hour"),
+          locale: {
+            format: "M/DD hh:mm A",
+          },
+        })
+      })
+    </script>
+  </body>
+</html>
