@@ -41,39 +41,56 @@
   <body data-theme="light">
     <div>
       <header class="border-b">
-        <div class="container flex justify-between items-center mx-auto py-3">
-          <h1 class="text-3xl font-bold">Lupe</h1>
+        <div class="container flex justify-between items-center mx-auto py-4">
+          <h1 class="text-5xl font-semibold">Lupe</h1>
           <div>
             <img width="30" src="./assets/images/close.png" alt="close" />
           </div>
         </div>
       </header>
-      <div class="container mx-auto flex justify-center">
-        <div class="w-10/12">
-          <nav>
-            <div class="navbar gap-5 px-6 border rounded-md my-10 bg-base-100">
+      <div class="xl:container mx-auto flex justify-center">
+        <div class="xl:w-10/12 w-full ">
+          <nav class="px-6 border rounded-md my-10 flex">
+            <div class="navbar gap-5 bg-base-100">
               <a
                 class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
                 >Templates</a
               >
               <a
-                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal bg-blue text-green-200 text-blue border-none shadow-none text-md"
-                >Create Report</a
-              >
+              class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+              >Create Reports</a
+            >
               <a
                 class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
                 >Manage Reports</a
               >
-              <a
-                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
-                >Drill Down</a
-              >
+             
             </div>
+            <aside class="flex items-center gap-3">
+              <div>
+                <img width="50" src="./assets/images/Settings.png" alt="" />
+              </div>
+              <div class="dropdown relative dropdown-bottom">
+                <div tabindex="0" role="button" class="btn border pr-10 m-1">
+                  English
+                </div>
+                <div class="absolute right-3 top-5">
+                  <img width="15" src="./assets/images/down-arrow.png" alt="" />
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>French</a></li>
+                  <li><a>German</a></li>
+                </ul>
+              </div>
+            </aside>
           </nav>
           <!-- ================ start-from-scratch ==================== -->
 
           <div class="flex gap-4 my-4">
-            <div class="flex bg-blue py-2 px-2 items-center gap-2">
+            <div class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,23 +101,23 @@
                 >
                   <path
                     d="M8.60291 4.65198C8.60291 3.65029 9.41494 2.83826 10.4166 2.83826H12.2303C13.232 2.83826 14.0441 3.65029 14.0441 4.65198V6.4657H8.60291V4.65198Z"
-                    stroke="#0ABAB5"
+                    stroke=""
                     stroke-width="1.81372"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                   <path
                     d="M8.60291 4.65198H6.78918C5.78749 4.65198 4.97546 5.46401 4.97546 6.4657V17.348C4.97546 18.3497 5.78749 19.1617 6.78918 19.1617H11.3235H15.8578C16.8595 19.1617 17.6715 18.3497 17.6715 17.348V6.4657C17.6715 5.46401 16.8595 4.65198 15.8578 4.65198H14.0441"
-                    stroke="#0ABAB5"
+                    stroke=""
                     stroke-width="1.81372"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                 </svg>
               </div>
-              <p class="text-blue">Start from scratch</p>
+              <p class="">Start from scratch</p>
             </div>
-            <div class="flex py-2 px-2 items-center gap-2">
+            <div class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +128,7 @@
                 >
                   <path
                     d="M3.98999 8.48136V16.0363C3.98999 16.9635 4.74165 17.7152 5.66886 17.7152H12.3844M3.98999 8.48136V5.96305C3.98999 5.03584 4.74165 4.28418 5.66886 4.28418H15.7421C16.6693 4.28418 17.421 5.03584 17.421 5.96305V8.48136M3.98999 8.48136H12.3844M17.421 8.48136V16.0363C17.421 16.9635 16.6693 17.7152 15.7421 17.7152H12.3844M17.421 8.48136H12.3844M12.3844 8.48136V17.7152"
-                    stroke="black"
+                    stroke=""
                     stroke-opacity="0.5"
                     stroke-width="1.67887"
                     stroke-linecap="round"
@@ -121,7 +138,7 @@
               </div>
               <p>Start from a template</p>
             </div>
-            <div class="flex py-2 px-2 items-center gap-2">
+            <div class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +149,7 @@
                 >
                   <path
                     d="M9.2052 5C9.2052 3.89543 10.1006 3 11.2052 3H13.2052C14.3098 3 15.2052 3.89543 15.2052 5V7H9.2052V5Z"
-                    stroke="black"
+                    stroke=""
                     stroke-opacity="0.5"
                     stroke-width="2"
                     stroke-linecap="round"
@@ -140,7 +157,7 @@
                   />
                   <path
                     d="M9.2052 5H7.2052C6.10063 5 5.2052 5.89543 5.2052 7V19C5.2052 20.1046 6.10063 21 7.2052 21H11.2052M15.2052 5H17.2052C18.3098 5 19.2052 5.89543 19.2052 7V12"
-                    stroke="black"
+                    stroke=""
                     stroke-opacity="0.5"
                     stroke-width="2"
                     stroke-linecap="round"
@@ -148,7 +165,7 @@
                   />
                   <path
                     d="M16.7052 15V21M16.7052 21L14.2052 18.5M16.7052 21L19.2052 18.5"
-                    stroke="black"
+                    stroke=""
                     stroke-opacity="0.5"
                     stroke-width="2"
                     stroke-linecap="round"
@@ -252,7 +269,7 @@
                   </p>
                 </div>
                 <div
-                  class="flex justify-center items-center py-3 px-2 bg-gray-100 rounded"
+                  class="flex cursor-pointer stroke-black hover:stroke-[#0ABAB5] justify-center items-center py-4 px-3 bg-gray-100 rounded"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -264,14 +281,14 @@
                     <g clip-path="url(#clip0_35_110)">
                       <path
                         d="M1.5 1.66699L8.16667 8.33366"
-                        stroke="#0ABAB5"
+                        stroke=""
                         stroke-width="1.66667"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       />
                       <path
                         d="M8.1665 1.66699L1.49984 8.33366"
-                        stroke="#0ABAB5"
+                        stroke=""
                         stroke-width="1.66667"
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -339,9 +356,9 @@
                 <p>Advance Setting </p>
               </div>
                 <div
-                  class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-b border-[#0ABAB5] w-4/12"
+                  class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4  w-4/12"
                 >
-                  <p class="text-blue">Formating</p>
+                  <p>Formating</p>
                 </div>
                 <div
                   class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-l w-4/12"
@@ -448,26 +465,7 @@
       <!-- ================= footer ================== -->
       <footer class="footer items-center border-t mt-16 p-4">
         <div class="container flex justify-between items-center mx-auto">
-          <aside class="flex items-center gap-3">
-            <div>
-              <img width="30" src="./assets/images/Settings.png" alt="" />
-            </div>
-            <div class="dropdown relative dropdown-top">
-              <div tabindex="0" role="button" class="btn border pr-10 m-1">
-                English
-              </div>
-              <div class="absolute right-3 top-4">
-                <img width="25" src="./assets/images/arrow-up.png" alt="" />
-              </div>
-              <ul
-                tabindex="0"
-                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>French</a></li>
-                <li><a>German</a></li>
-              </ul>
-            </div>
-          </aside>
+          
           <p>Copyright © 2023 - All right reserved</p>
         </div>
       </footer>
