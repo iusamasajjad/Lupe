@@ -49,22 +49,21 @@
         </div>
       </header>
       <div class="xl:container mx-auto flex justify-center">
-        <div class="xl:w-10/12 w-full ">
+        <div class="xl:w-10/12 w-full">
           <nav class="px-6 border rounded-md my-10 flex">
-            <div class="navbar gap-5 bg-base-100">
+            <div id="navigation" class="navbar gap-5 bg-base-100">
               <a
-                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                class="btn bg-transparent nav active hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-light border-none shadow-none text-lg"
                 >Templates</a
               >
               <a
-              class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
-              >Create Reports</a
-            >
+                class="btn bg-transparent nav  hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-light border-none shadow-none text-lg"
+                >Create Reports</a
+              >
               <a
-                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                class="btn bg-transparent nav hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-light border-none shadow-none text-lg"
                 >Manage Reports</a
               >
-             
             </div>
             <aside class="flex items-center gap-3">
               <div>
@@ -90,7 +89,9 @@
           <!-- ================ start-from-scratch ==================== -->
 
           <div class="flex gap-4 my-4">
-            <div class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2">
+            <div
+              class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +118,9 @@
               </div>
               <p class="">Start from scratch</p>
             </div>
-            <div class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2">
+            <div
+              class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +141,9 @@
               </div>
               <p>Start from a template</p>
             </div>
-            <div class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2">
+            <div
+              class="flex hover:bg-[#0abab50a] stroke-[black] hover:stroke-[#0ABAB5] cursor-pointer hover:text-[#0ABAB5] py-2 px-2 items-center gap-2"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -267,44 +272,45 @@
                     1:32 You can insert rows & columns directly indide your
                     report
                   </p>
-                </div>
-                <div
-                  class="flex cursor-pointer stroke-black hover:stroke-[#0ABAB5] justify-center items-center py-4 px-3 bg-gray-100 rounded"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10"
-                    height="10"
-                    viewBox="0 0 10 10"
-                    fill="none"
+
+                  <div
+                    class="cursor-pointer stroke-black hover:stroke-[#0ABAB5] "
                   >
-                    <g clip-path="url(#clip0_35_110)">
-                      <path
-                        d="M1.5 1.66699L8.16667 8.33366"
-                        stroke=""
-                        stroke-width="1.66667"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8.1665 1.66699L1.49984 8.33366"
-                        stroke=""
-                        stroke-width="1.66667"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_35_110">
-                        <rect
-                          width="9"
-                          height="10"
-                          fill="white"
-                          transform="translate(0.166626)"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_35_110)">
+                        <path
+                          d="M1.5 1.66699L8.16667 8.33366"
+                          stroke=""
+                          stroke-width="1.66667"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                        <path
+                          d="M8.1665 1.66699L1.49984 8.33366"
+                          stroke=""
+                          stroke-width="1.66667"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_35_110">
+                          <rect
+                            width="9"
+                            height="10"
+                            fill="white"
+                            transform="translate(0.166626)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
                 </div>
               </div>
               <!-- date-range -->
@@ -340,7 +346,7 @@
                     <input type="checkbox" checked />
                     <span class="slider round"></span>
                   </label>
-                  <p class="mt-6 mx-2">Add budget & variance columns</p>
+                  <p class="mt-6 mx-1">Add budget & variance columns</p>
                 </div>
               </div>
             </div>
@@ -349,19 +355,19 @@
           <!-- ================== filter-section ================ -->
           <div class="mt-14 mb-6">
             <div class="w-full flex justify-center">
-              <div class="w-8/12 flex justify-between border rounded-md">
+              <div id="formatSection" class="w-8/12 flex justify-between border rounded-md">
                 <div
-                class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer border-r py-4 w-4/12"
-              >
-                <p>Advance Setting </p>
-              </div>
+                  class="text-center format hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer border-r py-4 w-4/12"
+                >
+                  <p>Advance Setting</p>
+                </div>
                 <div
-                  class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4  w-4/12"
+                  class="text-center format hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 w-4/12"
                 >
                   <p>Formating</p>
                 </div>
                 <div
-                  class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-l w-4/12"
+                  class="text-center format hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-l w-4/12"
                 >
                   <p>Filter</p>
                 </div>
@@ -375,9 +381,7 @@
               <div class="flex justify-between items-start">
                 <!-- toggle-btn -->
                 <div class="">
-                    <span class="label-text font-semibold"
-                      >Select an option</span
-                    >
+                  <span class="label-text font-semibold">Select an option</span>
                   <div class="flex justify-between gap-3">
                     <div class="flex items-center">
                       <label class="switch mt-8 my-2">
@@ -397,7 +401,7 @@
                   <div class="flex gap-3">
                     <div class="flex items-center">
                       <label class="switch mt-8 my-2">
-                        <input type="checkbox"  />
+                        <input type="checkbox" />
                         <span class="slider round"></span>
                       </label>
                       <p class="mt-6 mx-2">Hide cents</p>
@@ -426,7 +430,7 @@
               </div>
               <div class="flex justify-end">
                 <div class="flex gap-3 items-end w-full max-w-md">
-                  <button class="btn px-6 text-white bg-blue-dark">
+                  <button class="btn px-8 text-white bg-blue-dark">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -449,7 +453,7 @@
                         stroke-linejoin="round"
                       />
                     </svg>
-                    Button
+                    Create Report
                   </button>
                   <div>
                     <p>Sheet name</p>
@@ -465,7 +469,6 @@
       <!-- ================= footer ================== -->
       <footer class="footer items-center border-t mt-16 p-4">
         <div class="container flex justify-between items-center mx-auto">
-          
           <p>Copyright © 2023 - All right reserved</p>
         </div>
       </footer>
@@ -483,5 +486,6 @@
         })
       })
     </script>
+    <script src="./assets/script/script.js"></script>
   </body>
 </html>
