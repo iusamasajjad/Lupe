@@ -42,33 +42,49 @@
     <div>
       <header class="border-b">
         <div class="container flex justify-between items-center mx-auto py-3">
-          <h1 class="text-3xl font-bold">Lupe</h1>
+          <h1 class="text-5xl font-semibold">Lupe</h1>
           <div>
             <img width="30" src="./assets/images/close.png" alt="close" />
           </div>
         </div>
       </header>
-      <div class="container mx-auto flex justify-center">
-        <div class="w-10/12">
-          <nav>
-            <div class="navbar gap-5 px-6 border rounded-md my-10 bg-base-100">
+      <div class="xl:container mx-auto flex justify-center">
+        <div class="xl:w-10/12 w-full">
+          <nav class="px-6 border rounded-md my-10 flex">
+            <div id="navigation" class="navbar gap-5 bg-base-100">
               <a
-                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                class="btn bg-transparent nav  hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-light border-none shadow-none text-lg"
                 >Templates</a
               >
               <a
-                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal bg-blue text-green-200 text-blue border-none shadow-none text-md"
-                >Create Report</a
+                class="btn bg-transparent nav active hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-light border-none shadow-none text-lg"
+                >Create Reports</a
               >
               <a
-                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
+                class="btn bg-transparent nav hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-light border-none shadow-none text-lg"
                 >Manage Reports</a
               >
-              <a
-                class="btn bg-transparent hover:bg-[#0ABAB50A] hover:text-[#0ABAB5] font-normal border-none shadow-none text-md"
-                >Drill Down</a
-              >
             </div>
+            <aside class="flex items-center gap-3">
+              <div>
+                <img width="50" src="./assets/images/Settings.png" alt="" />
+              </div>
+              <div class="dropdown relative dropdown-bottom">
+                <div tabindex="0" role="button" class="btn border pr-10 m-1">
+                  English
+                </div>
+                <div class="absolute right-3 top-5">
+                  <img width="15" src="./assets/images/down-arrow.png" alt="" />
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>French</a></li>
+                  <li><a>German</a></li>
+                </ul>
+              </div>
+            </aside>
           </nav>
           <!-- ================ form-controls =================== -->
           <div>
@@ -150,14 +166,20 @@
           <!-- ================== filter-section ================ -->
           <div class="mt-14 mb-6">
             <div class="w-full flex justify-center">
-              <div class="w-8/12 flex justify-between border rounded-md">
-                <div class="text-center hover:text-[#0ABAB5]  hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-b border-[#0ABAB5] w-4/12">
-                  <p class="text-blue">Filter</p>
+              <div id="formatSection" class="w-8/12 flex justify-between border rounded-md">
+                <div
+                  class="text-center format hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer border-r py-4 w-4/12"
+                >
+                  <p>Filter</p>
                 </div>
-                <div class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer  border-l py-4 w-4/12">
+                <div
+                  class="text-center format hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 w-4/12"
+                >
                   <p>Formating</p>
                 </div>
-                <div class="text-center hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-l w-4/12">
+                <div
+                  class="text-center format hover:text-[#0ABAB5] hover:border-b hover:border-b-[#0ABAB5] cursor-pointer py-4 border-l w-4/12"
+                >
                   <p>Styling</p>
                 </div>
               </div>
@@ -252,26 +274,6 @@
       <!-- ================= footer ================== -->
       <footer class="footer items-center border-t mt-16 p-4">
         <div class="container flex justify-between items-center mx-auto">
-          <aside class="flex items-center gap-3">
-            <div>
-              <img width="30" src="./assets/images/Settings.png" alt="" />
-            </div>
-            <div class="dropdown relative dropdown-top">
-              <div tabindex="0" role="button" class="btn border pr-10 m-1">
-                English
-              </div>
-              <div class="absolute right-3 top-4">
-                <img width="25" src="./assets/images/arrow-up.png" alt="" />
-              </div>
-              <ul
-                tabindex="0"
-                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>French</a></li>
-                <li><a>German</a></li>
-              </ul>
-            </div>
-          </aside>
           <p>Copyright © 2023 - All right reserved</p>
         </div>
       </footer>
@@ -289,5 +291,6 @@
         })
       })
     </script>
+    <script src="./assets/script/script.js"></script>
   </body>
 </html>
